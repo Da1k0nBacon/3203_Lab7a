@@ -6,7 +6,7 @@ pipeline {
 				stage('Deploy') {
 					agent any
 					steps {
-						sh 'ls /var/html/www'
+						sh 'pwd'
 						sh 'chmod 777 ./jenkins/scripts/deploy.sh'
 						sh 'chmod 777 ./jenkins/scripts/kill.sh'
 						sh './jenkins/scripts/deploy.sh'
